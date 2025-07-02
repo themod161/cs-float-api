@@ -45,7 +45,6 @@
   },
   "devDependencies": {
     "@types/qs": "^6.14.0",
-    "@types/steam-tradeoffer-manager": "^2.11.2",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   }
