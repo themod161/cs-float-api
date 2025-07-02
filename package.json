@@ -1,0 +1,44 @@
+{
+  "name": "cs-float-api",
+  "version": "0.1.0",
+  "description": "A lightweight, fully typed TypeScript library for working with the CSFloat service. Built on an event-driven model, it lets you subscribe to real-time updates and manage all aspects of your CS:GO account and trade operations with zero boilerplate.",
+  "license": "MIT",
+  "type": "commonjs",
+  "author": "THEMOD",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm,iife --dts --sourcemap"
+  },
+  "keywords": [
+    "csgo",
+    "trading",
+    "typescript",
+    "api",
+    "event-driven",
+    "csfloat"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.iife.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "browser": "./dist/index.global.js"
+    }
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "qs": "^6.14.0"
+  },
+  "devDependencies": {
+    "@types/qs": "^6.14.0",
+    "@types/steam-tradeoffer-manager": "^2.11.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}
