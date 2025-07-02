@@ -1,6 +1,6 @@
 {
   "name": "cs-float-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A lightweight, fully typed TypeScript library for working with the CSFloat service. Built on an event-driven model, it lets you subscribe to real-time updates and manage all aspects of your CS:GO account and trade operations with zero boilerplate.",
   "license": "MIT",
   "type": "commonjs",
@@ -8,6 +8,14 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm,iife --dts --sourcemap"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/themod161/cs-float-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/themod161/cs-float-api/issues"
+  },
+  "homepage": "https://github.com/themod161/cs-float-api#readme",
   "keywords": [
     "csgo",
     "trading",
